@@ -6,20 +6,37 @@
     <link rel="stylesheet" href="src/poem.css" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>AI Poem Generator</title>
   </head>
   <body>
     <div class="container">
-    <header>A Poem Made For You</header>
-    <form id="poem-form">
-      <input type="text" placeholder="Enter a topic" autocomplete="off" autofocus required class="topic" id="topic"/>
-      <input type="submit" value="Generate" class="submit-topic">
-    </form>
-    
-    <div class="poem-result" id="poem-result">This is the where the poem show</div>
-    <footer>
-      This is an AI Poem Generator made by Aprille Guevarra and is open-sourced.
-    </footer>
+      <header>A Poem Made For You</header>
+      <div class="form-container">
+        <form id="poem-form">
+          <input
+            type="text"
+            placeholder="Enter a topic"
+            autocomplete="off"
+            autofocus
+            autocomplete="off"
+            required
+            class="topic"
+            id="topic"
+          />
+          <input type="submit" value="Generate" class="submit-topic" />
+        </form>
+        <p>i.e: Yellow, Flower or Balloon</p>
+      </div>
+
+      <div class="poem-result hidden" id="poem-result"></div>
+      <footer>
+        This is an AI Poem Generator made by <a href="https://github.com/aprilleg" target="_blank">Aprille Guevarra</a> and is
+        <a href="https://github.com/aprilleg/AI-Poem-Generator" target="_blank">open-sourced</a>.
+      </footer>
     </div>
     <script src="src/poem.js"></script>
   </body>

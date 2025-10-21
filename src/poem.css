@@ -1,6 +1,6 @@
 body {
   background-color: antiquewhite;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 header {
   font-size: 24px;
@@ -12,15 +12,24 @@ header {
   margin: 120px auto;
   max-width: 600px;
 }
-form {
+.form-container {
   background-color: white;
-  padding:20px 30px;
+  padding: 20px 30px;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   width: 100%;
   box-sizing: border-box;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  opacity: 0.6;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 .topic {
   font-size: 16px;
@@ -38,9 +47,13 @@ form {
   border-radius: 50px;
   border: none;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  background-color: pink;
+  background-color: palevioletred;
   color: white;
   margin-left: 10px;
+  transition: 200ms ease-in-out;
+}
+.submit-topic:hover {
+  background-color: pink;
 }
 
 .poem-result {
@@ -52,8 +65,11 @@ form {
   padding: 30px;
   text-align: center;
   box-sizing: border-box;
-  border-left: 5px solid pink;
+  border-left: 5px solid palevioletred;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+.hidden {
+  display: none;
 }
 
 .poem-result strong {
@@ -67,3 +83,6 @@ footer {
   margin-top: 20px;
 }
 
+a {
+  font-style: italic;
+}
