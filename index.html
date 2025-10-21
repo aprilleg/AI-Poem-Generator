@@ -7,15 +7,18 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>A Poem for you</header>
+    <div class="container">
+    <header>A Poem For You</header>
     <form>
-      <input type="text" placeholder="Enter a topic" autocomplete="off" autofocus required/>
-      <input type="submit" value="Generate">
+      <input type="text" placeholder="Enter a topic" autocomplete="off" autofocus required class="topic"/>
+      <input type="submit" value="Generate" class="submit-topic">
     </form>
-    <div>This is the where the poem show</div>
+    
+    <div class="poem-result">This is the where the poem show</div>
     <footer>
       This is an AI Poem Generator made by Aprille Guevarra and is open-sourced.
     </footer>
+    </div>
     <script src="src/poem.js"></script>
   </body>
 </html>
