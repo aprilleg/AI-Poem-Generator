@@ -56,9 +56,14 @@ form {
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 }
 
+.poem-result strong {
+  color: pink;
+  font-style: italic;
+}
+
 footer {
   text-align: center;
   font-size: 12px;
   margin-top: 20px;
-  
 }
+
